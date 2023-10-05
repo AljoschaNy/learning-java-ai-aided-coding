@@ -26,4 +26,14 @@ public class Main {
         String reversed = new StringBuilder(cleanedInput).reverse().toString();
         return cleanedInput.equals(reversed);
     }
+
+    public static boolean isPalindromeWithSpecialChars(String input) {
+        if (input == null) {
+            return false;
+        }
+        //String cleanedInput = input.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        String cleanedInput = input.toLowerCase();
+        String reversed = new StringBuilder(cleanedInput).reverse().toString();
+        return cleanedInput.equals(reversed);
+    }
 }
